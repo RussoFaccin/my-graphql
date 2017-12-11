@@ -8,7 +8,7 @@ type Media {
 }
 
 type Query {
-  allMedia: [Media!]
-  mockMedia: [Media!]
+	getAllMedia: [Media!]
+	getMediaByType(type: String!): [Media]
 }
 `;
